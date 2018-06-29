@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol PropertyCell where Self: UITableViewCell {
+protocol PropertyCell: AnyObject where Self: UITableViewCell {
     func configure(using property: Property)
 }
