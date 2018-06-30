@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,7 +36,9 @@
                     <constraint firstAttribute="trailing" secondItem="hFh-I0-TxZ" secondAttribute="trailing" constant="16" id="3qT-pd-PUf"/>
                     <constraint firstItem="hFh-I0-TxZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5jN-4M-PYs"/>
                     <constraint firstItem="e3e-6L-RzR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jdf-Wy-GSq"/>
+                    <constraint firstItem="hFh-I0-TxZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="P9J-0p-cyd"/>
                     <constraint firstItem="e3e-6L-RzR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="VAQ-fr-515"/>
+                    <constraint firstAttribute="bottom" secondItem="hFh-I0-TxZ" secondAttribute="bottom" constant="6" id="xl5-gP-Hdd"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
