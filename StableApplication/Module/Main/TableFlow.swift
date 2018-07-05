@@ -62,7 +62,7 @@ extension TableFlow: UITableViewDataSource {
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: property.cellIdentifier, for: indexPath)
         cell.selectionStyle = .none
-        guard let propertyCell = cell as? PropertyCell else {
+        guard let propertyCell = cell as? PropertyCell & UITableViewCell else {
             return cell
         }
         propertyCell.configure(using: property)
