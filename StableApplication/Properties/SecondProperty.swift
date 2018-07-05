@@ -16,6 +16,12 @@ class SecondProperty {
 // MARK: - Property
 
 extension SecondProperty: Property {
+    func cellInstance(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SecondTableViewCell
+        cell.configure(using: self)
+        return cell
+    }
+    
     var cellClass: UITableViewCell.Type {
         return SecondTableViewCell.self
     }

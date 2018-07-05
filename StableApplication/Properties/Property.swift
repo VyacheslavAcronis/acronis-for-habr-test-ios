@@ -14,6 +14,8 @@ protocol Property {
     var cellClass: UITableViewCell.Type { get }
     var cellIdentifier: String { get }
     var isHidden: Bool { get set }
+    func cellInstance(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell
+
 }
 
 extension Property {

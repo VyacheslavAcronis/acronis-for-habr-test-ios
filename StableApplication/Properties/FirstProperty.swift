@@ -16,6 +16,12 @@ struct FirstProperty {
 // MARK: - Property
 
 extension FirstProperty: Property {
+    func cellInstance(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! FirstTableViewCell
+        cell.configure(using: self)
+        return cell
+    }
+    
     var cellClass: UITableViewCell.Type {
         return FirstTableViewCell.self
     }

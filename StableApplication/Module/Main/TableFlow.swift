@@ -60,13 +60,15 @@ extension TableFlow: UITableViewDataSource {
         guard let property = dataFeeder[indexPath] else {
             return UITableViewCell()
         }
-        let cell = tableView.dequeueReusableCell(withIdentifier: property.cellIdentifier, for: indexPath)
+        
+        /// New cell instance method is created in Property protocol
+        /// that gives cell instance already configured
+        let cell = property.cellInstance(tableView, indexPath: indexPath)
         cell.selectionStyle = .none
+    
         guard let propertyCell = cell as? PropertyCell else {
             return cell
         }
-        propertyCell.configure(using: property)
-
         switch propertyCell {
         case let secondTableViewCell as SecondTableViewCell:
             secondTableViewCell.secondPropertyTapHandler = self
